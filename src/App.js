@@ -11,9 +11,11 @@ function App() {
     log(url + "/data")
     useEffect(() => {
         fetch(url + "/data")
+            // eslint-disable-next-line no-sequences
             .then(data => (log("success:"), data.json().then(data => setData(data.data))))
+            // eslint-disable-next-line no-sequences
             .catch(_ => (log("error:", _), setData("error")))
-    }, [url]);
+    }, [log, url]);
 
 
   return (
