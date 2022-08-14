@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-
+    console.log(process.env)
     const [data, setData] = useState(undefined);
     const url = process.env.BASE_URL || "http://localhost:7070";
 
