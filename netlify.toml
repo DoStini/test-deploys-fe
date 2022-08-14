@@ -1,0 +1,7 @@
+# PR Previews context: allow dev tools usage for api hostname changing, for example
+[context.deploy-preview.environment]
+  REACT_APP_BASE_URL = "https://deploys-be.herokuapp.com"
+
+# Branch previews context: allow dev tools usage for api hostname changing, for example
+[context.branch-deploy.environment]
+  REACT_APP_BASE_URL = "https://deploys-be.herokuapp.com"
